@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Payments</title>
+	<link rel="icon"  href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/payment.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="js/payment.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="header-left">
+			<button type="submit" onclick="payment1()"><img src="img/ajio.png" alt="ajio"></button>
+		</div>
+		<div class="header-middle">
+			<img src="img/secure-cash.jpg" alt="secure-cash">
+			<img src="img/assured-easy.jpg" alt="assured-easy">
+		</div>
+	</div>
+	<div class="body">
+		<div class="body1">
+			<img src="img/payment1.png" alt="payment1">
+			<div class="body1-part1">
+				<h1>Select</h1>
+				<h1>Redeem</h1>
+				<h1>Option</h1>
+				<h2>Verify OTP to use redemption options</h2>
+				<button type="submit">Verify with OTP</button>
+			</div>
+			<div class="body1-part2">
+				<img src="img/payment3.png" alt="payment3">
+			</div>
+			<div class="body1-part3">
+				<h1>Select</h1>
+				<h1>Payment</h1>
+				<h1>Mode</h1>
+			</div>
+		</div>
+		<div class="body2">
+			<img src="img/payment2.png" alt="payment2">
+		</div>
+	</div>
+	<div class="tab">
+  		<button type="submit" class="tablinks" onclick="payments(event, 'CorD')">Credit/ Debit Card</button>
+  		<button type="submit" class="tablinks" onclick="payments(event, 'NB')">NetBanking</button>
+  		<button type="submit" class="tablinks" onclick="payments(event, 'Wallet')">Wallet</button>
+  		<button type="submit" class="tablinks" onclick="payments(event, 'UPI')">UPI</button>
+  		<button type="submit" class="tablinks" onclick="payments(event, 'ConD')">Cash on Delivery</button>
+	</div>
+	<div id="CorD" class="tabcontent">
+		<div class="body1-part4-part2-1">
+			<h5>Add New Card</h5>
+			<p>Card Number</p>
+			<form>
+				<input type="text">
+				<p>Name on Card</p>
+				<input type="text">
+				<div class="body1-part4-part2-1-1">
+					<p>Expiration Date</p>
+					<h6>CVV<span>(What's This?)</span></h6>
+				</div>
+				<div class="body1-part4-part2-2-1">
+					<select name="Month">
+						<option>Month</option>
+						<option>Jan (1)</option>
+						<option>Feb (2)</option>
+						<option>Mar (3)</option>
+						<option>Apr (4)</option>
+						<option>May (5)</option>
+						<option>Jun (6)</option>
+						<option>Jul (7)</option>
+						<option>Aug (8)</option>
+						<option>Sep (9)</option>
+						<option>Oct (10)</option>
+						<option>Nov (11)</option>
+						<option>Dec (12)</option>
+					</select>
+					<select name="Year">
+						<option>Year</option>
+						<option>2021</option>
+						<option>2022</option>
+						<option>2023</option>
+						<option>2024</option>
+						<option>2025</option>
+						<option>2026</option>
+						<option>2027</option>
+						<option>2028</option>
+						<option>2029</option>
+						<option>2030</option>
+						<option>2031</option>
+						<option>2032</option>
+					</select>
+					<input type="text">
+				</div>
+				<div class="body1-part4-part2-3-1">
+					<input type="checkbox" class="checkbox">
+					<p>Save this card securely</p>
+				</div>
+				<button type="submit">PAY SECURELY</button>
+				<h4>By placing this order, you agree to AJIO's T&C</h4>
+			</form>
+		</div>
+	</div>
+	<div id="NB" class="tabcontent">
+  		<div class="body1-part4-part2-2">
+			<h5>Select Bank</h5>
+			<div class="body1-part4-part2-1-2">
+				<img src="img/hdfc.png" alt="hdfc">
+				<img src="img/sbi.png" alt="sbi">
+				<img src="img/icici.png" alt="icici">
+				<img src="img/axis.png" alt="axis">
+				<img src="img/kotak.png" alt="kotak">
+			</div>
+			<h6>View More Banks</h6>
+			<button type="submit">PAY SECURELY</button>
+			<h4>By placing this order, you agree to AJIO's T&C</h4>
+		</div> 
+	</div>
+	<div id="Wallet" class="tabcontent">
+  		<div class="body1-part4-part2-3">
+			<h5>Select Bank</h5>
+			<div class="body1-part4-part2-1-3">
+				<img src="img/paytm.png" alt="paytm">
+				<img src="img/mobikwik.png" alt="mobikwik">
+				<img src="img/phonepe.png" alt="phonepe">
+				<img src="img/jiomoney.png" alt="jiomoney">
+			</div>
+			<button type="submit">PAY SECURELY</button>
+			<h4>By placing this order, you agree to AJIO's T&C</h4>
+		</div>
+	</div>
+	<div id="UPI" class="tabcontent">
+  		<div class="body1-part4-part2-4">
+  			<form>
+				<h5>Enter your UPI ID</h5>
+				<p>Pay instantly from your bank using your UPI ID</p>
+				<h6>How to find UPI ID?</h6>
+				<input type="text" placeholder="1234567890@upi">
+				<div class="body1-part4-part2-3-4">
+					<input type="checkbox" class="checkbox">
+					<p>Save this UPI ID for faster checkout</p>
+				</div>
+				<button type="submit">PAY SECURELY</button>
+				<h4>By placing this order, you agree to AJIO's T&C</h4>
+			</form>
+		</div>
+	</div>
+	<div id="ConD" class="tabcontent">
+  		<div class="body1-part4-part2-5">
+			<h5>Cash on Delivery</h5>
+			<p>For safe, contactless and hassle free delivery, pay using card/ wallet/ netbanking</p>
+			<button type="submit" onclick="balert()">PLACE ORDER</button>
+			<h4>By placing this order, you agree to AJIO's T&C</h4>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="footer">
+		<div class="footer2">
+			<h3>Payment Methods</h3>
+			<p>Secure Systems</p>
+		</div>
+		<div class="footer3">
+			<img src="img/net.png" alt="net" class="img1">
+			<img src="img/visa.png" alt="visa" class="img2">
+			<img src="img/mastercard.png" alt="master card" class="img3">
+			<img src="img/cash.png" alt="cash" class="img4">
+			<img src="img/jio.png" alt="jio" class="img5">
+			<img src="img/secure.png" alt="secure" class="img6">
+		</div>
+	</div>
+</body>
+</html>

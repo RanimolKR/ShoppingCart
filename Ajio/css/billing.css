@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+
+.header {
+	display: flex;
+	height: 95px;
+	position: sticky;
+	background-color: white;
+	border-top: 3px solid #00264d;
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+}
+.header-left button{
+	outline: none;
+	border: none;
+	background-color: white;
+}
+.header-left img {
+	width: 130px;
+	height: 41px;
+	margin-left: 85px;
+	margin-top: 20px;
+}
+.header-left img:hover {
+	cursor: pointer;
+}
+
+.header-middle img{
+	width: 400px;
+	margin-top: 20px;
+	margin-left: 100px;
+	height: 60px;
+}
+
+.header-right {
+	display: flex;
+	margin-top: 8px;
+	margin-left: 290px;
+}
+.header-right a {
+	font-size: 12px;
+	height: 15px;
+	padding-right: 30px;
+	color: black;
+	opacity: 0.8;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+.header-right a:hover {
+	color: #002966;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+.body1 {
+	display: flex;
+	height: 340px;
+	margin-top: 40px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.body1 .material-icons {
+	margin-left: 100px;
+	color: #404040;
+	font-size: 36px;
+}
+.sub-body1 {
+	width: 500px;
+}
+.sub-body1 h5{
+	margin-left: 15px;
+	font-size: 15px;
+	color: #404040;
+}
+.sub-body1 p {
+	margin-left: 15px;
+	padding-top: 10px;
+	font-size: 15px;
+	color: #808080;
+}
+.sub-body1 h3 {
+	margin-top: 40px;
+	margin-left: -25px;
+	font-size: 18px;
+	font-weight: normal;
+}
+.sub-body1 h4 {
+	margin-top: 20px;
+	margin-left: -25px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #808080;
+}
+.sub-body1 h6 {
+	margin-top: 10px;
+	margin-left: -25px;
+	font-size: 13px;
+	color: #004d80;
+	opacity: 0.8;
+	padding-top: 25px;
+	cursor: pointer;
+}
+
+.sub1-body1 {
+	margin-left: 350px;
+}
+.sub1-body1 img {
+	width: 300px;
+	height: 220px;
+}
+.sub1-body1 button {
+	margin-left: 18px;
+	width: 273px;
+	height: 45px;
+	border: none;
+	outline: none;
+	background-color: #cc7a00;
+	opacity: 0.7;
+	color: white;
+}
+.sub1-body1 button:hover {
+	background-color: #cc8800;
+	border: 1px solid #c5782b;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.body2 {
+	display: flex;
+	margin-left: 330px;
+	margin-top: 20px;
+	height: 80px;
+}
+.body2 img {
+	width: 310px;
+	height: 60px;
+	padding-right: 20px;
+}
